@@ -1,0 +1,56 @@
+ASAP or it won't function:
+    Advancements
+        TorchOnAStick.json
+            "criteria": {
+                "TorchCrafted":"minecraft:impossible",
+                "RedstoneTorchCrafted": "minecraft:impossible",
+                "SoulTorchCrafted": "minecraft:impossible"},
+                    Item needed names aren't functional
+            "rewards": {
+                "recipes": [
+                    "LanternArrow",
+                    "SoulLanternArrow"]}
+                        These aren't 1. real recipes that exist and 2. not formatted right (do I need to put LanternArrow.json?)
+            "requirements": [],
+                I don't understand what goes in this section.
+                There is little documentation that I understand (https://minecraft.fandom.com/wiki/Advancement/JSON_format#Legend)
+    Recipes
+        TorchArrow.json
+            Needs to be a functional recipe
+
+When a custom item is made fix:
+    Advancements
+        TorchOnAStick.json
+            Icon needs to be TorchArrow item
+    Recipes
+        TorchArrow.json
+            "result": {
+		        "item": "minecraft:fire"
+		            need to be TorchArrow item
+
+When I have time:
+    All
+        Rename to fit proper naming scheme (lowercase_underscore_for_spaces)
+    Advancements
+        IDEA: Hefty Arrow
+            Achieved by player when they either: 1. craft lantern arrow or 2. place a lantern with a lantern arrow (any)
+    Functions
+        LoadMessage.json
+            Write a message that confirms the datapack has been loaded
+            Function executes when pack is loaded
+    Recipes
+        SoulTorchArrow.json
+            Needs to be a functional recipe
+        RedstoneTorchArrow.json
+            Needs to be a functional recipe
+        LanternArrow.json
+            Needs to be a functional recipe
+        SoulLanternArrows.json
+            Needs to be a functional recipe
+    Datapack Image
+        add a pack.png image to /Willow'sArrows
+    Debug setting
+        Have a set of functions confirming that each part of the pack has been loaded in
+        Allow it to be toggleable
+Useful Links
+    https://minecraft.fandom.com/wiki/NBT_format#SNBT_format
