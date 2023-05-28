@@ -1,0 +1,37 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:fire"
+    },
+    "title": "Torch on a Stick",
+    "description": "Craft any torch arrow",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "adventure/shoot_arrow",
+  "criteria": {
+    "TorchArrowAcquired": {
+      "minecraft:inventory_changed": {
+        "items": ["TorchArrow"]
+      }
+    },
+    "RedstoneTorchArrowAcquired": {
+      "minecraft:inventory_changed": {
+        "items": ["RedstoneTorchArrow"]
+      }
+    },
+    "SoulTorchArrowAcquired": {
+      "minecraft:inventory_changed": {
+        "items": ["SoulTorchArrow"]
+      }
+    }
+  },
+  "rewards": {
+    "recipes": [
+      "LanternArrow",
+      "SoulLanternArrow"
+    ]
+  }
+}
